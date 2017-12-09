@@ -7,3 +7,9 @@ some_data <- function() {
     stringsAsFactors = FALSE
   )
 }
+
+#' Turn the table into HTML
+#' @export
+a_table <- function() {
+  htmlTable::htmlTable(some_data())
+}
